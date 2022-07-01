@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220701 12:36:26.027" rpa="false" schemaversion="3">
+<suite id="s1" name="Automation" source="C:\Users\banamu\Desktop\sa\demo\automation.robot">
+<test id="s1-t1" name="To verify user able to login yahoo" line="9">
+<kw name="login yahoo">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220701 12:36:26.357" level="INFO">Opening browser 'chrome' to base url 'https://login.yahoo.com/'.</msg>
+<status status="PASS" starttime="20220701 12:36:26.357" endtime="20220701 12:36:30.917"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="login-username"]</arg>
+<arg>sindhuchetty0@yahoo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220701 12:36:30.918" level="INFO">Typing text 'sindhuchetty0@yahoo.com' into text field '//*[@id="login-username"]'.</msg>
+<status status="PASS" starttime="20220701 12:36:30.917" endtime="20220701 12:36:31.017"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="login-signin"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220701 12:36:31.018" level="INFO">Clicking element '//*[@id="login-signin"]'.</msg>
+<status status="PASS" starttime="20220701 12:36:31.018" endtime="20220701 12:36:31.076"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>xpath://*[@name="password"]</arg>
+<arg>Ullas@100</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220701 12:36:31.076" level="INFO">Typing password into text field 'xpath://*[@name="password"]'.</msg>
+<msg timestamp="20220701 12:36:31.879" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220701 12:36:31.879" level="FAIL">Element with locator 'xpath://*[@name="password"]' not found.</msg>
+<status status="FAIL" starttime="20220701 12:36:31.076" endtime="20220701 12:36:31.885"/>
+</kw>
+<status status="FAIL" starttime="20220701 12:36:26.356" endtime="20220701 12:36:31.885"/>
+</kw>
+<status status="FAIL" starttime="20220701 12:36:26.356" endtime="20220701 12:36:31.886">Element with locator 'xpath://*[@name="password"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220701 12:36:26.033" endtime="20220701 12:36:31.888"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Automation">Automation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
